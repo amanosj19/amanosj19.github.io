@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Christchurch Boys' High School</title>
+	<meta charset="UTF-8">
+  	<meta name="description" content="Christchurch Boys' High School">
+  	<meta name="keywords" content="HTML, CSS, JavaScript, Website, Keywords, etc">
+  	<meta name="author" content="Shannon A">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link rel="shortcut icon" type="image/jpg" href="media/logo.jpg"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+</head>
+<body>
+
+	<script type="text/javascript" src="js/jquery.js" async="async"
+></script>
+
+	<!-- DEVELOPER NOTES -->
+	<!-- HTML - Some divs contain x-placeholder, these placeholders are inserted with elements via JavaScript if you are wondering why nothing is displaying something. -->
+	<!-- CSS - Some of the website will not be responsive, due to the exsive amount of time that it would take to complete this -->
+	<!-- JavaScript - I have decided to use reusable components to make development much more effecient, though I an bit advocating to use HTML in string. I would much rather use a JavaScript Framework or another Programming Language. I choose to keep the website only front-end applicable, so that there is no need for any installation or localhost, you can run it directly from the file. I have not seen what the website looks like in other text editors, but I suggest reading it via sublime to see what I see.
+		In some of the js, I am using localstorage, this is the front-end alternative to back-end cookies, although you can use document.cookie, but I found localstorage would be better for this project -->
+	<!-- Performance - I have tried my best to minimise animations and shadows, while also having an elegant interface. -->
+	
+
+	<!-- All of the code for this website is original or at least a modified version of inspiration that I have gained from another website  -->
+
+	
+
+		<!-- Loader Placeholder, the container for inserting the loader into via JavaScript -->
+		<div id="loader-placeholder"></div>
+
+<div class="delay">
+
+		<!-- Navigation Placeholder, the container for inserting the navigation menu into via JavaScript -->
+		<div id="nav-placeholder"></div>
+
+		<div class="progress-bar-container">
+		  <div class="progress-container">
+		    <div class="progress-bar" id="pg-bar"></div>
+		  </div>
+		</div>
+
+		<!-- Search Results Placeholder, the container for inserting the search results into via JavaScript -->
+		<div id="search-results-placeholder"></div>
+
+		<!-- External Navogation Placeholder, the container for inserting the external navigation content into via JavaScript -->
+		<div id="external-nav-placeholder"></div>
+
+		<!-- Notification Placeholder, the container for inserting the notifications into via JavaScript -->
+		<div id="notification-placeholder"></div>
+
+		<!-- Global Checklist Placeholder, the container for inserting the checkboxes into via JavaScript -->
+		<div id="global-checklist-placeholder"></div>
+
+	<!-- This is a cool trick I learnt, this HTML snippet makes the browser request for an image from an online sever, if the image comes back, we know that the user is online, but if there is no response, we can conclude the user is offline. If the image or server was distrupted, then this method could be ineffective. - Alerts the user if they are offline  -->
+	<img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/1kb.png" onload="online()" onerror="offline()" async="async"
+>
+
+	<div class="root">
+
+		<div class="default-modal-overlay">
+			<div class="default-modal-container">
+				<div class="default-modal">
+					<div class="modal-main-content">
+						<p id="close-modal">&times;</p>
+						<h1>Modal Title</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur.</p>
+					</div>
+					<div class="modal-caption">
+						<p>When you click this button, something will happen!</p>
+						<button type="button">A button or something</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-header" data-aos="fade-left">
+		</div>
+
+		<div class="main-header-overlay" data-aos="fade-right">
+			<div class="slide-line-container">
+				<div class="slide-line slide-line-right"></div>
+				<div class="slide-line slide-line-right2"></div>
+				<div class="slide-line slide-line-left"></div>
+				<div class="slide-line slide-line-left2"></div>
+			</div>
+			<h1 id="header-text">Christchurch Boys' High School</h1>
+		</div>
+
+		<div class="other-links-container" data-aos="zoom-in">
+			<div class="sources-link-container">
+				<div class="direct-header-container">
+					<h3>Sources</h3>
+					<p>Have a look at our sources</p>
+				</div>
+				<div class="direct-source-container">
+					<a href="sources">Sources →</a>
+				</div>
+			</div>
+			<div class="sources-link-container">
+				<div class="direct-header-container">
+					<h3>CBHS</h3>
+					<p>For information about our school, go to the CBHS website</p>
+				</div>
+				<div class="direct-source-container">
+					<a href="https://cbhs.school.nz" target="_blank">CBHS →</a>
+				</div>
+			</div>
+			<div class="sources-link-container">
+
+				<div class="direct-header-container">
+					<h3>Coding</h3>
+					<p class="sm-font">Want to learn how to code? Learn more at w3schools!</p>
+				</div>
+				<div class="direct-source-container">
+					<a href="https://www.w3schools.com/" target="_blank">Learn Code →</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-links-container">
+			<div class="link-box" data-aos="fade-right"></div>
+			<div class="link-box" data-aos="fade-up"></div>
+			<div class="link-box" data-aos="fade-up"></div>
+			<div class="link-box" data-aos="fade-left"></div>
+		</div>
+
+		<div class="main-links-overlay-container">
+			<div class="link-box-overlay" data-aos="fade-right">
+				<h1>English</h1>
+				<a href="english.html">English →</a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore.</p>
+			</div>
+			<div class="link-box-overlay" data-aos="fade-up">
+				<h1>Math</h1>
+				<a href="math.html">Math →</a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore.</p>
+			</div>
+			<div class="link-box-overlay" data-aos="fade-up">
+				<h1>Science</h1>
+				<a href="science.html">Science →</a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore.</p>
+			</div>
+			<div class="link-box-overlay" data-aos="fade-left">
+				<h1>Additional Facts</h1>
+				<a href="facts.html">Additional Facts →</a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore.</p>
+			</div>
+		</div>
+
+		<br><br><br><br>
+
+		<div class="default-split-section"></div>
+
+		<br><br>
+
+		<div class="section-2-container">
+			<h1>An Entirely Front-end Based Website - jQuery</h1>
+			<br>
+			<b>JavaScript and jQuery</b>
+			<p>This website in its entirety is based on jQuery and JavaScript. JavaScript is a client-side language, meaning that the script runs directly on your computer. What isn't client-side? The option is to have a server-side language that can run in the background, this can enable the website to have certain functions, such as Sign Up, Log In, Send and Email, Upload Files, Database Search, and much more. </p>
+			<br>
+			<a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript" target="_blank" class="default-btn">Learn more about JavaScript →</a>
+			<br>
+		</div>
+
+		<br><br>
+
+		<div class="default-split-section"></div>
+
+		<br><br><br><br><br><br>
+
+		<div id="maps-placeholder"></div>
+		<script type="text/javascript">
+			
+// Vanilla JS
+function initMap() {
+  const location = { lat: -43.52448, lng: 172.60019 };
+     const map = new google.maps.Map(document.querySelector(".map-container"), {
+       zoom: 15,
+      center: location,
+     });
+     const marker = new google.maps.Marker({
+    position: location,
+    map: map,
+    });
+}
+	 	function online(){
+	 		var online = true;
+	 		$('#maps-placeholder').html(`
+				<div class="map-title">
+					<h1>Where Christchurch Boys' High School is on the map</h1>
+				</div>
+			    <div class="map-container">
+			    	<p>Couldn't connect to Google Maps</p>
+			    </div>
+			    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly" async><\/script>
+				`);
+	 		console.log("%cUser is Online", "color: #fff; background: #299106; font-size: 15px; padding: 10px;");
+	 		console.log("%cGoogle Maps Connected", "color: #fff; background: #299106; font-size: 15px; padding: 10px;");
+	 	}
+
+	 	function offline(){
+	 		var online = false;
+	 		//alert('It appears that you are currently offline, please connect to the internet for the best experience');
+	 		$('#maps-placeholder').html(`
+				<div class="map-title">
+					<h1>Where Christchurch Boys' High School is on the map</h1>
+				</div>
+			    <div class="map-container">
+			    	<p>Couldn't connect to Google Maps</p>
+			    </div>
+			`);
+	 		console.log("%cUser Offline", "color: #fff; background: #920505; font-size: 15px; padding: 10px;");
+			console.log("%cGoogle Maps Failed due to user being offline", "color: #fff; background: #920505; font-size: 15px; padding: 10px;");
+	 	}
+		 </script>
+
+
+		<br><br><br><br><br><br>
+
+		<div class="default-split-section"></div>
+
+		<br><br><br><br>
+
+
+		 <div class="checklist-container" id="checklist-">
+		 	<div class="checklist-wrap">
+		 		<div class="checklist-header">
+		 			<h1>Your Checklist - <b class="percentage-placeholder">20%</b></h1>
+		 			<h3>Check off what you have done when navigating through the website. Don't worry, it will save even you go to another page. The checklist will reset after you restart you browser or clear your browsers cache. </h3>
+		 		</div>
+		 		<div class="checklist-flex">
+		 			<div class="checklist-row-one">
+		 				<h3>Pages</h3>
+						<label class="checklist">Homepage
+						    <input type="checkbox" class="check-home" checked>
+						    <span class="checkmark" id="checked"></span>
+						</label>
+						<label class="checklist">English
+						    <input type="checkbox" class="check-english">
+						    <span class="checkmark"></span>
+						</label>
+						<label class="checklist">Math
+						    <input type="checkbox" class="check-math">
+						    <span class="checkmark"></span>
+						</label>
+						<label class="checklist">Science
+						    <input type="checkbox" class="check-science">
+						    <span class="checkmark"></span>
+						</label>
+						<label class="checklist">Additional Facts
+						    <input type="checkbox" class="check-facts">
+						    <span class="checkmark"></span>
+						</label>
+						<label class="checklist">Global Sources
+						    <input type="checkbox" class="check-sources">
+						    <span class="checkmark"></span>
+						</label>
+			 		</div>
+			 		<div class="checklist-row-two">
+			 			<h3>JS Functions</h3>
+			 			<label class="checklist">Checklist
+						    <input type="checkbox" class="check-check" checked>
+						    <span class="checkmark" id="checked"></span>
+						</label>
+						<label class="checklist">Dark Theme / Light Theme
+						    <input type="checkbox" class="check-theme">
+						    <span class="checkmark"></span>
+						</label>
+						<label class="checklist">Burger Menu
+						    <input type="checkbox" class="check-burger-menu">
+						    <span class="checkmark"></span>
+						</label>
+						<label class="checklist">Search Function
+						    <input type="checkbox" class="check-search">
+						    <span class="checkmark"></span>
+						</label>
+			 		</div>
+		 		</div>
+		 		<div class="completion-ani-container">
+		 			 <div class="completion-ani">
+		 			 	<span class="com-checkmark">
+						    <div class="com-checkmark_stem"></div>
+						    <div class="com-checkmark_kick"></div>
+						</span>
+		 			 </div>
+		 			 <div class="restart-check-container">
+		 			 	<div class="restart-check-wrap">
+		 			 		<button class="restart-check">Restart Checklist</button>
+		 			 	</div>
+		 			 </div>		
+		 		</div>
+		 	</div>
+		 	<p><b style="color: red;">* </b> Click on the checklist button in the nav bar to see your progress on other pages <b id="checklist-nav-highlight">Highlight Checklist Button (3 sec)</b></p>
+		 	<p><b style="color: red;">* </b>Complete the checklist to see a short animation at the end</p>
+		 </div>
+
+
+		<br><br><br><br><br><br>
+
+		<div class="default-split-section"></div>
+
+
+		<br><br><br><br><br><br>
+
+
+
+	</div>
+
+
+</div>
+</body>
+<div id="footer-placeholder"></div>
+<script type="text/javascript" src="js/main.js" async="async"
+></script>
+<script type="text/javascript" src="js/default.js" async="async"
+></script>
+</html>

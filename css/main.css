@@ -109,7 +109,7 @@
     z-index: 2;
     width: 98%;
     height: 200px;
-    margin: -200px auto 10px auto;
+    margin: -200px auto 10px auto; 
     border-radius: 10px;
     transition: .3s;
     text-align: center;

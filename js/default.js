@@ -139,8 +139,8 @@ $(document).ready(function(){
 						<p class="result-description">loremsd fg hs hfdhjfd ghfhuitrbfj ffjf dgfhds hfhj fds hfr tfhjw gerf dgfxhj gdhjv gdyu gfvyhut rgehfd gfdyhs gfhj fgfdhj vgyhfdgshfjds gsyf dgshfyugfhjs fyswrdhshfjs grfhjsbfdshj rfgj</p>
 					</div>
 					<div class="result-link">
-						<p class="result-link-display">https://intranet.cbhs.school.nz/start/?g=s</p>
-						<a href="https://intranet.cbhs.school.nz/start/?g=s" class="result-link-click">CBHS Intranet Start Page</a>
+						<p class="result-link-display">https://supkhan.github.io/</p>
+						<a href="https://supkhan.github.io/" class="result-link-click">Karl Buenaventura's Website</a>
 						<p class="result-description">loremsd fg hs hfdhjfd ghfhuitrbfj ffjf dgfhds hfhj fds hfr tfhjw gerf dgfxhj gdhjv gdyu gfvyhut rgehfd gfdyhs gfhj fgfdhj vgyhfdgshfjds gsyf dgshfyugfhjs fyswrdhshfjs grfhjsbfdshj rfgj</p>
 					</div><div class="result-link">
 						<p class="result-link-display">https://intranet.cbhs.school.nz/start/?g=s</p>
